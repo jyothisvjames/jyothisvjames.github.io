@@ -1,0 +1,19 @@
+{
+    "name": "YouTube Live Channels",
+    "short_name": "YLC",
+    "description": "YouTube Live Channels is a PWA that helps to directly access live FTA YouTube channels streams.",
+    "icons": [
+      {
+        "src": "assets/Default.png",
+        "sizes": "32x32",
+        "type": "image/png"
+      },
+      {
+        "src": "assets/Default.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+    ],
+    "start_url": "./index.html",
+    "display": "fullscreen"
+  }
