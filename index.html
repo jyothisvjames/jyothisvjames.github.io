@@ -1,11 +1,14 @@
 <!doctype html>
 
+<html>
+
 <head>
   <title>
     News & Christian Channels
   </title>
-  <meta name="viewport" content="width=device-width, initial-scale=0.5">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="manifest" href="manifest.json">
+  <script src="/script.js" defer></script>
 </head>
 
 
@@ -24,7 +27,28 @@
 h4.lineheight {
   line-height: 0.5;
   text-align: center;
+
 }
+.hidden {
+  display: none !important;
+}
+
+#installContainer {
+  position: absolute;
+  bottom: 1em;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+#installContainer button {
+  background-color: inherit;
+  border: 1px solid white;
+  color: white;
+  font-size: 1em;
+  padding: 0.75em;
+}
+
 </style>
 
 <body style="background-color:black; color:white;">
@@ -323,4 +347,13 @@ h4.lineheight {
     Developed and Maintained by <b><a href="mailto:jyothisvjames@gmail.com"> Jyothis V James</a></b> | All trademarks and media assets used in this site are the property of their respective owners. | 2021
   </center>
 
+  <!-- Install button, hidden by default -->
+  <div id="installContainer" class="hidden">
+    <button id="butInstall" type="button">
+      Install
+    </button>
+  </div>
+
 </body>
+
+</html>
