@@ -8,18 +8,30 @@
   </title>
   <meta name="viewport" content="width=device-width, initial-scale=0.5">
   <link rel="manifest" href="manifest.json">
+  <link rel="shortcut icon" href="assets/icon-192.png">
   <script src="/script.js" defer></script>
 </head>
 
 
 <style>
-#grid {
+#grid_more {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 10px;
+}
+#grid_more > div {
+  background-color:white;
+  grid-row:span;
+  color:black;
+}
+#grid_less {
   display: grid;
   grid-template-rows: auto;
   grid-template-columns: repeat(6, 1fr);
   grid-gap: 10px;
 }
-#grid > div {
+#grid_less > div {
   background-color:white;
   grid-row:span;
   color:black;
@@ -57,7 +69,7 @@ h4.lineheight {
     Malayalam Indian News Channels
   </h4>
 
-  <div id="grid">
+  <div id="grid_more">
 
     <div>
       <center>
@@ -147,11 +159,7 @@ h4.lineheight {
       </center>
     </div>
 
-    <div>
-      <center>
-        <img src="assets/Default.png" alt="Default">  
-      </center>
-    </div>
+    <div></div>
 
   </div>
   
@@ -159,7 +167,7 @@ h4.lineheight {
     English Indian News Channels
   </h3>
 
-  <div id="grid">
+  <div id="grid_less">
 
     <div>
       <center>
@@ -201,13 +209,7 @@ h4.lineheight {
       </center>
     </div>
 
-    <div>
-      <center>
-        <a href="https://www.wionews.com/live-tv/embed#autoplay">
-          <img src="assets/Wion.png" alt="Wion News">
-        </a>
-      </center>
-    </div>
+    <div></div>
   
   </div>
 
@@ -215,7 +217,7 @@ h4.lineheight {
     English International News Channels
   </h4>
 
-  <div id="grid">
+  <div id="grid_more">
 
     <div>
       <center>
@@ -289,7 +291,7 @@ h4.lineheight {
     Christian Devotional Channels
   </h4>
 
-  <div id="grid">
+  <div id="grid_less">
 
     <div>
       <center>
